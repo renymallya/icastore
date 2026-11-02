@@ -27,23 +27,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <CartProvider>
-          <header className="sticky top-0 z-20 border-b border-sand bg-cream/95 backdrop-blur">
+          <header className="sticky top-0 z-20 bg-olive text-white">
             <div className="container-page flex h-16 items-center justify-between gap-4">
-              <Link href="/" className="font-display text-2xl tracking-[0.2em] text-clay">
+              <Link href="/" className="font-display text-2xl tracking-[0.2em] text-white">
                 icastore
               </Link>
-              <nav className="hidden gap-6 text-sm md:flex">
+              <nav className="hidden gap-6 text-sm font-medium uppercase tracking-wider md:flex">
                 {nav.map((n) => (
-                  <Link key={n.href} href={n.href} className="hover:text-clay">
+                  <Link key={n.href} href={n.href} className="hover:text-white/70">
                     {n.label}
                   </Link>
                 ))}
               </nav>
-              <Link href="/cart" className="text-sm hover:text-clay">
+              <Link href="/cart" className="text-sm font-medium uppercase tracking-wider hover:text-white/70">
                 <CartCount />
               </Link>
             </div>
-            <nav className="container-page flex gap-5 overflow-x-auto pb-3 text-sm md:hidden">
+            <nav className="container-page flex gap-5 overflow-x-auto pb-3 text-xs font-medium uppercase tracking-wider md:hidden">
               {nav.map((n) => (
                 <Link key={n.href} href={n.href} className="whitespace-nowrap">
                   {n.label}
@@ -54,10 +54,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           <main className="flex-1">{children}</main>
 
-          <footer className="mt-24 border-t border-sand bg-sand/40">
+          <footer className="mt-24 border-t border-sand bg-white">
             <div className="container-page grid gap-8 py-12 text-sm md:grid-cols-3">
               <div>
-                <p className="font-display text-xl tracking-[0.2em] text-clay">icastore</p>
+                <p className="font-display text-xl tracking-[0.2em] text-olive">icastore</p>
                 <p className="mt-2 text-muted">{store.tagline}</p>
               </div>
               <div className="space-y-1">

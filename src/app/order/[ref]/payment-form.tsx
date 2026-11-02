@@ -15,7 +15,7 @@ export function PaymentForm({ orderRef, submittedCode }: { orderRef: string; sub
         </p>
         {submittedCode && !state?.ok && (
           <details className="mt-3">
-            <summary className="cursor-pointer text-clay">Entered the wrong code?</summary>
+            <summary className="cursor-pointer text-olive">Entered the wrong code?</summary>
             <CodeForm orderRef={orderRef} action={action} pending={pending} error={state?.error} />
           </details>
         )}

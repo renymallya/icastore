@@ -34,10 +34,10 @@ function esc(s: string) {
 }
 
 function layout(body: string) {
-  return `<div style="font-family:Georgia,serif;max-width:560px;margin:auto;color:#2b2118">
-  <h1 style="font-weight:normal;letter-spacing:.08em;color:#8a3b1f">${store.name}</h1>
+  return `<div style="font-family:Georgia,serif;max-width:560px;margin:auto;color:#111111">
+  <h1 style="font-weight:normal;letter-spacing:.08em;color:#556b2f">${store.name}</h1>
   ${body}
-  <p style="color:#7a6a5c;font-size:13px;margin-top:32px">${store.tagline}<br>${store.siteUrl}</p>
+  <p style="color:#6b6b6b;font-size:13px;margin-top:32px">${store.tagline}<br>${store.siteUrl}</p>
 </div>`;
 }
 

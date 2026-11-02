@@ -68,7 +68,7 @@ export function ImageUploader({
         </ul>
       )}
       {urls.length < max && (
-        <label className="inline-block cursor-pointer rounded border border-dashed border-clay px-4 py-2 text-sm text-clay">
+        <label className="inline-block cursor-pointer rounded border border-dashed border-olive px-4 py-2 text-sm text-olive">
           {busy ? "Uploading…" : "Add photos"}
           <input
             type="file"

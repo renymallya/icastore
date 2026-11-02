@@ -33,7 +33,7 @@ export default async function OrderPage({
       </h1>
 
       {canPay && (
-        <section className="mt-8 rounded-sm border-2 border-clay bg-white p-6">
+        <section className="mt-8 rounded-sm border-2 border-olive bg-white p-6">
           <div className="grid gap-4 text-center sm:grid-cols-3">
             <div>
               <p className="text-xs uppercase tracking-widest text-muted">Lipa Namba</p>

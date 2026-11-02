@@ -44,7 +44,7 @@ export default async function OrdersAdmin({ searchParams }: { searchParams: Prom
                 {o.notes && <p className="text-muted">Note: {o.notes}</p>}
               </div>
               <div className="text-right">
-                <p className={o.status === "payment_submitted" ? "font-medium text-clay" : ""}>{humanize(o.status)}</p>
+                <p className={o.status === "payment_submitted" ? "font-medium text-olive" : ""}>{humanize(o.status)}</p>
                 {o.mpesaCode && <p className="font-mono">M-Pesa: {o.mpesaCode}</p>}
               </div>
             </div>

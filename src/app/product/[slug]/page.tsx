@@ -50,7 +50,7 @@ export default async function ProductPage({ params }: Props) {
         {category && (
           <Link
             href={`/${category.section === "clothing" ? "shop" : "accessories"}?category=${category.slug}`}
-            className="text-xs uppercase tracking-widest text-muted hover:text-clay"
+            className="text-xs uppercase tracking-widest text-muted hover:text-olive"
           >
             {category.name}
           </Link>
@@ -65,9 +65,9 @@ export default async function ProductPage({ params }: Props) {
         {product.stock === null ? (
           <p className="mt-2 text-sm text-muted">Made to order: allow 1–2 weeks.</p>
         ) : soldOut ? (
-          <p className="mt-2 text-sm text-clay">Sold out. Ask us about making one for you.</p>
+          <p className="mt-2 text-sm text-olive">Sold out. Ask us about making one for you.</p>
         ) : product.stock <= 3 ? (
-          <p className="mt-2 text-sm text-clay">Only {product.stock} left</p>
+          <p className="mt-2 text-sm text-olive">Only {product.stock} left</p>
         ) : null}
 
         <div className="mt-8">
@@ -88,7 +88,7 @@ export default async function ProductPage({ params }: Props) {
 
         <div className="mt-10 rounded-sm border border-sand p-5 text-sm">
           <p className="font-medium">Want it in a different size, colour or fabric?</p>
-          <Link href={`/commission?based_on=${product.slug}`} className="mt-1 inline-block text-clay underline underline-offset-4">
+          <Link href={`/commission?based_on=${product.slug}`} className="mt-1 inline-block text-olive underline underline-offset-4">
             Request a custom version
           </Link>
         </div>

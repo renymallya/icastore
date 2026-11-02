@@ -10,10 +10,10 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="batik-placeholder relative">
-        <div className="bg-cream/80">
+      <section className="relative border-b border-sand">
+        <div>
           <div className="container-page py-24 md:py-36">
-            <p className="text-xs uppercase tracking-[0.3em] text-clay">Handmade in Tanzania</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-olive">Handmade in Tanzania</p>
             <h1 className="mt-4 max-w-2xl font-display text-5xl leading-tight md:text-6xl">
               Clothes made by hand, for every day and your biggest day.
             </h1>
@@ -40,7 +40,7 @@ export default async function HomePage() {
             <Link
               key={c.slug}
               href={`/shop?category=${c.slug}`}
-              className="group flex aspect-[4/5] flex-col justify-end rounded-sm bg-sand p-4 transition hover:bg-clay hover:text-cream"
+              className="group flex aspect-[4/5] flex-col justify-end rounded-sm bg-sand p-4 transition hover:bg-olive hover:text-cream"
             >
               <span className="font-display text-xl">{c.name}</span>
               <span className="mt-1 text-xs text-muted group-hover:text-cream/80">{c.blurb}</span>
@@ -61,7 +61,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="container-page mt-20 grid gap-8 rounded-sm bg-indigo p-10 text-cream md:grid-cols-2 md:p-16">
+      <section className="container-page mt-20 grid gap-8 rounded-sm bg-ink p-10 text-cream md:grid-cols-2 md:p-16">
         <div>
           <h2 className="font-display text-4xl">Made to your measure</h2>
           <p className="mt-4 text-cream/80">
@@ -70,7 +70,7 @@ export default async function HomePage() {
           </p>
         </div>
         <div className="flex items-center md:justify-end">
-          <Link href="/commission" className="btn bg-cream text-ink hover:bg-clay hover:text-cream">
+          <Link href="/commission" className="btn bg-cream text-ink hover:bg-olive hover:text-cream">
             Commission a piece
           </Link>
         </div>
