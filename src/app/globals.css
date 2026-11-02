@@ -2,9 +2,9 @@
 
 @theme {
   --color-cream: #ffffff;
-  --color-sand: #ececec;
-  --color-ink: #111111;
-  --color-muted: #6b6b6b;
+  --color-sand: #e9ebe3;
+  --color-ink: #2b3418;
+  --color-muted: #5f6748;
   --color-olive: #556b2f;
   --font-display: var(--font-cormorant), Georgia, serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
@@ -17,10 +17,10 @@ body {
 
 /* Stand-in pattern for products without photos yet */
 .batik-placeholder {
-  background-color: #f4f4f4;
+  background-color: #f3f4ee;
   background-image:
     radial-gradient(circle at 25% 25%, rgb(85 107 47 / 0.14) 0 12%, transparent 13%),
-    radial-gradient(circle at 75% 75%, rgb(17 17 17 / 0.06) 0 12%, transparent 13%);
+    radial-gradient(circle at 75% 75%, rgb(43 52 24 / 0.07) 0 12%, transparent 13%);
   background-size: 48px 48px;
 }
 
